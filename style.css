@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lato";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  max-height: 100vh;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.content--add-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#input-new-task,
+#btn-new-task {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  padding: 1rem;
+}
+
+#input-new-task {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+#btn-new-task {
+  background-color: rgba(27, 29, 27, 0.796);
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+#btn-new-task:hover {
+  background-color: rgb(69, 69, 69);
+  transition: all 0.4s ease-in-out;
+}
+
+#to-do-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+
+#to-do-list li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
